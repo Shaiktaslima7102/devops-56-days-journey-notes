@@ -1,0 +1,64 @@
+  DevOps - Day 2 Tasks with Explanation
+✅ 1. Create a Directory
+•	Command: mkdir devops_scripts
+•	Purpose: Organize your work by grouping related scripts inside a folder.
+•	Explanation: mkdir (make directory) creates a new folder. This helps in maintaining a clean file structure.
+________________________________________
+✅ 2. Navigate to a Directory
+•	Command: cd devops_scripts
+•	Purpose: Move into the newly created folder to start working inside it.
+•	Explanation: cd (change directory) helps you navigate your file system in the terminal.
+________________________________________
+✅ 3. Create a File
+•	Command: touch monitor.sh
+•	Alternative: nano monitor.sh (to create and directly edit)
+•	Purpose: Create a new shell script file.
+•	Explanation: touch creates an empty file. .sh indicates it's a shell script.
+________________________________________
+✅ 4. Write into the File
+•	Command: echo echo monitor is printing > monitor.sh
+•	Purpose: Add a simple echo command into your script.
+•	Explanation: echo ... > file writes the string into the file, replacing its content.
+________________________________________
+✅ 5. Handle Permission Issues
+•	Error Faced: Permission denied when writing into or deleting files.
+•	Fix: Use sudo for admin access and chmod to change file permissions.
+o	Command: sudo chmod +x monitor.sh
+o	Explanation: chmod +x makes the script executable.
+o	Use sudo before commands to perform actions with administrator privileges.
+________________________________________
+✅ 6. Run the Script
+•	Command: ./monitor.sh
+•	Purpose: Execute the shell script.
+•	Explanation: ./ is used to run scripts in the current directory.
+________________________________________
+✅ 7. Remove Files and Directories
+•	Command to delete a file: sudo rm monitor.sh
+•	Command to delete directory: sudo rm -r devops_scripts
+•	Explanation:
+o	rm removes files.
+o	rm -r removes directories and their contents recursively.
+o	sudo is used when permissions are restricted.
+✅ Your Task
+1.	Navigate to your home directory
+cd ~
+2.	Create a directory named devops_scripts
+mkdir devops_scripts
+3.	Go inside the new directory
+cd devops_scripts
+4.	Create a file named monitor.sh
+touch monitor.sh
+5.	Add this basic script to monitor.sh
+echo echo System is up and running > monitor.sh
+6.	Make it executable
+chmod +x monitor.sh
+7.	Run the script to verify
+./monitor.sh
+8.	Check file permissions and file listing
+ls -l
+9.	Delete the file and directory (for cleanup) (Optional)
+rm monitor.sh
+cd ..
+rm -r devops_scripts
+
+
