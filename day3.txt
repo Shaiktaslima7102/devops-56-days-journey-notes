@@ -1,0 +1,62 @@
+
+📅 Day 3: Linux File Permissions
+✅ Topics Covered:
+Types of File Permissions:
+
+r – Read: View file contents or list directory.
+
+w – Write: Modify file or directory contents.
+
+x – Execute: Run file (if script or binary) or access directory.
+
+Permission Categories:
+
+User (u) – Owner of the file.
+
+Group (g) – Users in the same group as the owner.
+
+Others (o) – Everyone else.
+
+Checking Permissions:
+
+Command: ls -l
+
+Shows file type, permissions, owner, group, size, etc.
+
+Changing Permissions – chmod:
+
+Symbolic Mode:
+
+Example: chmod u+x file.sh (adds execute to user)
+
+Numeric Mode:
+
+Example: chmod 755 file.sh
+
+Breakdown:
+
+7 = read + write + execute
+
+5 = read + execute
+
+Changing Ownership – chown:
+
+Syntax: sudo chown user:group file.sh
+
+Handling Protected Files:
+
+Use sudo for actions needing elevated permissions.
+
+Example: sudo rm -r protected_directory
+
+🛠️ Practice Tasks Completed:
+Created and navigated directories using mkdir and cd.
+
+Created files and added content using echo and redirection.
+
+Changed permissions and ownership of files and directories.
+
+Handled deletion of write-protected directories using sudo.
+
+Explored permission errors and resolved using correct commands.
+
