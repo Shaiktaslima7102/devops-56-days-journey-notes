@@ -1,0 +1,92 @@
+📋 DevOps Journey – Day 1 Notes (Ubuntu Setup on Windows)
+🖥 Step 1: Check Your Operating System
+You are using Windows.
+
+Install Ubuntu inside Windows using WSL2.
+
+🛠 Step 2: Install and Set Up Ubuntu (WSL2)
+If WSL and Ubuntu are not installed yet:
+
+Open Command Prompt (cmd) as Administrator.
+
+Run:
+
+bash
+Copy code
+wsl --install
+Install Ubuntu (if not already).
+
+Set your Ubuntu username and password (one-time setup).
+
+⚡ Step 3: Update and Upgrade Ubuntu Packages
+After opening Ubuntu terminal, run:
+
+bash
+Copy code
+sudo apt update
+sudo apt upgrade -y
+(Updates software packages and security patches.)
+
+🛠 Step 4: Install Essential Tools for DevOps
+Run this single command:
+
+bash
+Copy code
+sudo apt install -y curl wget git vim net-tools
+✅ This installs:
+
+curl → For downloading files
+
+wget → Another downloader
+
+git → Version control
+
+vim → Text editor
+
+net-tools → Network utilities
+
+✅ Step 5: Verify Installation
+Check if Git is working:
+
+bash
+Copy code
+git --version
+Check network tool:
+
+bash
+Copy code
+ifconfig
+(If ifconfig command works, net-tools installed correctly.)
+
+🎉 Step 6: Celebrate!
+(Optional fun after installation):
+
+bash
+Copy code
+sudo apt install cowsay
+cowsay "Day 1 Completed! 🎉"
+📚 Summary:
+Today you learned to:
+
+Open Ubuntu on Windows.
+
+Set username/password.
+
+Update your system.
+
+Install important Linux tools.
+
+Confirm basic tool setup.
+
+🏆 After Day 1:
+You now have a working Linux environment ready for DevOps practice.
+
+📢 Quick Tip:
+If you ever get an error like "Unable to locate package", check spelling carefully!
+
+🎯 Next (Day 2 Plan Preview):
+Learn basic Linux commands (pwd, ls, cd, mkdir, touch, rm, etc.)
+
+Practice file and folder management.
+
+📄 End of Day 1 Notes ✅
